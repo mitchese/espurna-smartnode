@@ -29,6 +29,17 @@ void hwUpwardsCompatibility() {
     unsigned int board = getSetting("board", 0).toInt();
     if (board > 0) return;
 
+    #ifdef SMARTNODE
+        setSetting("relayProvider", RELAY_PROVIDER_LIGHT);
+        setSetting("lightProvider", LIGHT_PROVIDER_RGB);
+        //setSetting("ledGPIO", 1, 2);
+        //setSetting("ledLogic", 1, 1);
+        setSetting("redGPIO", 14);
+        setSetting("greenGPIO", 5);
+        setSetting("blueGPIO", 12);
+        setSetting("lightLogic", 1);
+    #endif
+
     #ifdef NODEMCUV2
         setSetting("board", 2);
         setSetting("ledGPIO", 1, 2);

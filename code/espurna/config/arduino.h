@@ -7,6 +7,7 @@
 // Hardware
 //--------------------------------------------------------------------------------
 
+#define SMARTNODE
 //#define D1_RELAYSHIELD
 //#define NODEMCUV2
 //#define SONOFF

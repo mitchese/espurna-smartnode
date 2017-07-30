@@ -22,7 +22,27 @@
 // Development boards
 // -----------------------------------------------------------------------------
 
-#if defined(NODEMCUV2)
+#if defined(SMARTNODE)
+    #define MANUFACTURER "MITCHELL"
+    #define DEVICE "SmartNode"
+    // #define LED_CONTROLLER
+    #define ENABLE_DOMOTICZ 0
+    #define ENABLE_FAUXMO 0
+    #define ENABLE_DHT 1
+    #define RELAY_PROVIDER RELAY_PROVIDER_LIGHT
+    #define LIGHT_PROVIDER LIGHT_PROVIDER_RGB
+    // ^-- means R=14; G=5; B=12; 14 conflicts with default DHT_PIN, change this in sensors.h
+    // suggested DHT_PIN 13
+    #define DHT_PIN 13
+    #define BUTTON2_PIN 4
+    #define BUTTON2_MODE BUTTON_SWITCH
+    #define BUTTON2_RELAY 1
+    #define RELAY1_LED 2
+    #define LED2_PIN 2
+    #define LED2_PIN_INVERSE 0
+
+
+#elif defined(NODEMCUV2)
 
     #define MANUFACTURER        "NODEMCU"
     #define DEVICE              "LOLIN"

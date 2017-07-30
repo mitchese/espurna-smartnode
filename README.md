@@ -1,3 +1,7 @@
+# Seans Notes
+
+This is my repository cloned from the bitbucket repository of Xose Perez. This includes minor changes for the SmartNodes
+
 # ESPurna Firmware
 
 ESPurna ("spark" in Catalan) is a custom firmware for ESP8266 based smart switches.

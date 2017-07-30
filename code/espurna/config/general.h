@@ -286,7 +286,7 @@ PROGMEM const char* const custom_reset_string[] = {
 #define MY9291_COMMAND          MY9291_COMMAND_DEFAULT
 
 // Shared settings between RGB and RGBW lights
-#define RGBW_INVERSE_LOGIC      1
+#define RGBW_INVERSE_LOGIC      0
 #define RGBW_RED_PIN            14
 #define RGBW_GREEN_PIN          5
 #define RGBW_BLUE_PIN           12

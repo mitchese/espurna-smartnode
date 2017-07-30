@@ -13,7 +13,7 @@
 // Enable support by passing ENABLE_DHT=1 build flag
 //--------------------------------------------------------------------------------
 
-#define DHT_PIN                 14
+//#define DHT_PIN                 14
 #define DHT_UPDATE_INTERVAL     60000
 #define DHT_TYPE                DHT22
 #define DHT_TIMING              11
